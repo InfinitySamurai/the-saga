@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Saga</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src ="resources/js/script.js"></script>
+  <link rel="stylesheet" href="resources/css/style.css">
+</head>
+    
+    
+<body>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">The Saga</a>
+        </div>
+        
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a data-toggle="tab" href="#earth">Earth</a></li>
+            <li><a data-toggle="tab" href="#mars">Mars</a></li>
+            <li><a data-toggle="tab" href="#jupiter">Jupiter Rings</a></li>
+            <li><a data-toggle="tab" href="#menu3">Page 3</a></li>
+        </ul>
+
+        <div id="planet-container" class="tab-content">
+            <div id="earth" class="tab-pane active">
+                <ul class="nav nav-pills nav-stacked pull-left">
+                    <li class="active"><a data-toggle="tab" href="#earth-overview">Overview</a></li>
+                    <li ><a data-toggle="tab" href="#earth-population">Population</a></li>
+                    <li ><a data-toggle="tab" href="#earth-production">Production</a></li>
+                    <li ><a data-toggle="tab" href="#earth-technology">Technology</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="earth-overview" class="tab-pane active planet-view">
+                        <h2> EARTH </h2>
+                        <h3>Rescources</h3>
+                        <table id="earth-resources-table" class="table planet-resources">
+                            <tbody>
+                            <tr><th>Resource</th><th>Amount</th><th>Amount/Second</th></tr>
+                            </tbody>
+                        </table>
+                        <h3>Population</h3>
+                        <table id="earth-population-table" class="table planet-population">
+                            <tbody>
+                            <tr><th>Type</th><th>Amount</th></tr>
+                            </tbody>
+                        </table>
+                        <h3>Buildings</h3>
+                        <table id="earth-buildings-table" class="table planet-buildings">
+                            <tbody>
+                            <tr><th>Name</th><th>Amount</th><th>Resource</th><th>Increment</th>
+                                <th>Multiplier</th></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="earth-population" class="tab-pane planet-view">
+                        <table id="earth-population-buy" class="table buy-population table-bordered">
+                            <tr><th>Type</th><th>Progress</th><th>Buy</th></tr>
+                            <tr><td>Villager</td>
+                                <td>
+                                    <div class="progress"><div class="progress-bar" role="progressbar" 
+                                    aria-valuenow="70" aria-valuemin="50" aria-valuemax="100" 
+                                    style="min-width: 2em; width:0%">0%</div></div>
+                                </td>
+                                <td><button type="button" class="btn btn-default">BUY</button></td></tr>
+                            <tr class="row-hidden"><td>Townsperson</td>
+                                <td><div class="progress"><div class="progress-bar" role="progressbar" 
+                                    aria-valuenow="70" aria-valuemin="50" aria-valuemax="100" 
+                                    style="min-width: 2em; width:0%">0%</div></div></td><td>
+                                <button type="button" class="btn btn-default">BUY</button></td></tr>
+                            <tr class="row-hidden"><td>Scientist</td>
+                                <td><div class="progress"><div class="progress-bar" role="progressbar" 
+                                    aria-valuenow="70" aria-valuemin="50" aria-valuemax="100" 
+                                    style="min-width: 2em; width:0%">0%</div></div></td><td>
+                                <button type="button" class="btn btn-default">BUY</button></td></tr>
+                            
+                            
+                        </table>
+                    </div>
+                    
+                    <div id="earth-production" class="tab-pane">
+                        you ain't got nothin to build with
+                    </div>
+                    
+                    <div id="earth-technology" class="tab-pane">
+                        Scientists are around somewhere
+                    </div>
+                </div>
+            </div>
+
+            <div id="mars" class="fluid-row span12 tab-pane">
+                <ul class="nav nav-pills nav-stacked span2 pull-left">
+                    <li class="active"><a data-toggle="tab" href="#mars-overview">Overview</a></li>
+                    <li ><a data-toggle="tab" href="#mars-population">Population</a></li>
+                    <li ><a data-toggle="tab" href="#mars-production">Production</a></li>
+                    <li ><a data-toggle="tab" href="#mars-technology">Technology</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="mars-overview" class="tab-pane active planet-view">
+                        <h2> MARS </h2>
+                        <h3>Rescources</h3>
+                        <table id="mars-resources-table" class="table planet-resources">
+                            <tr><th>Resource</th><th>Amount</th><th>Amount/Second</th></tr>
+                        </table>
+                        <h3>Population</h3>
+                        <table id="mars-population-table" class="table planet-population">
+                            <tr><th>Type</th><th>Amount</th></tr>
+                        </table>
+                         <table id="mars-buildings-table" class="table planet-buildings">
+                            <tbody>
+                            <tr><th>Name</th><th>Amount</th><th>Resource</th><th>Increment</th>
+                                <th>Multiplier</th></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="mars-population" class="tab-pane">
+                        This should be a tab for population
+                    </div>
+                    
+                    <div id="mars-production" class="tab-pane">
+                        you ain't got nothin to build with
+                    </div>
+                    
+                    <div id="mars-technology" class="tab-pane">
+                        Scientists are around somewhere
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
